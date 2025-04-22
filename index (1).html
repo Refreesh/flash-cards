@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Quiz Révision Éco</h1>
+        <div id="score">Score : 0</div>
+        <div class="flashcard" id="flashcard" onclick="toggleAnswer()">
+            <div id="card-content">
+                <p id="question"></p>
+                <p id="answer" class="hidden"></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="submitAnswer(false)">Faux</button>
+            <button onclick="submitAnswer(true)">Bon</button>
+        </div>
+        <button id="restart" onclick="restartQuiz()">Recommencer</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
